@@ -1,0 +1,30 @@
+.tab {
+    position: relative;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tab ~ .tab {
+    margin-left: -1px;
+}
+
+.tab::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    background-color: #242424;
+}
+
+.tab.active {
+    position: relative;
+    border-bottom: none;
+}
+
+.tab button {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
